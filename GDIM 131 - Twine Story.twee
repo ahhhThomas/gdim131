@@ -7,111 +7,166 @@ GDIM 131 - Twine Story
   "ifid": "AC05C446-3CE7-43ED-A973-F71FF967C713",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "The Morning",
+  "start": "Adrian's Ball",
   "zoom": 1
 }
 
 
-:: Alt + TAB and check Canvas {"position":"1900,500","size":"100,100"}
+:: Adrian's Ball {"position":"1300,100","size":"100,100"}
+# Adrian's (text-colour:orange)[Ball]
+### A life of (text-style:"blur")[ill-advised] decisions from a boy who was trying to live his dreams of being a pro basketball player.
+
+(set: _redblur to (text-style: "shudder") + (transition-time: 50s) + (text-colour: red))
+
+Choose your difficulty:
+[[Normal->The Morning]]
+_redblur[ [[Hardcore]] ]
 
 
+:: Canvas {"position":"1050,900","size":"100,100"}
+You log onto Canvas to see you are failing all your classes. You get too depressed.
 
-:: Canvas {"position":"900,500","size":"100,100"}
-
-
-
-:: Click on the link they posted {"position":"1700,500","size":"100,100"}
+[[Cry and make some breakfast->Make some breakfast]]
 
 
+:: Click on the link they posted {"position":"1200,900","size":"100,100"}
+(text-colour:lime)[''r/collegebasketball
+"Attention all local high school hoopers! The College of Ben Dover is hosting open tryouts for the basketball team tonight at Rammell Park! Come join us for an opportunity to showcase your talent #GOATLIFE 💕🦋🛸🐐😍🥇🕺🏾"'']
 
-:: Discord {"position":"600,500","size":"100,100"}
+Woah, this opportunity sounds way too good. But I'm a broke student and I've always wanted to be a pro basketball player...
 
-
-
-:: Go back to sleep {"position":"1600,0","size":"100,100"}
-You start entering a deep slumber to which you never woke up again.
-
-# THE END
+[[Fuck it, I'm just gonna go to the tryouts!->Go to Tryout]]
 
 
-:: Go morning routine {"position":"900,300","size":"100,100"}
-You brush your teeth, wash your face, and sit down on the toilet and start browsing your phone.
+:: Continue cooking {"position":"1900,700","size":"100,100"}
+Viola! Your food masterpiece is complete. You munch and munch and munch until there are no crumbs left on your plate.
 
-Which app do you want to open?
+Now, you feel extremely bloated. Food coma is starting to hit you...
 
-1. [[Discord]]
-
-2. [[Reddit]]
-
-3. [[Stocks App]]
-
-4. [[Canvas]]
+[[Take a quick nap in bed->Go back to sleep]] 
+[[Stay awake by going to your computer->Hop on your computer]] 
 
 
-:: Greet them {"position":"1150,500","size":"100,100"}
-
-
-
-:: Hop on your computer {"position":"1700,300","size":"100,100"}
-You hop on your computer, open up Discord, and see that your friends have been talking about some reddit page while you were asleep.
-
-Do you:
+:: Continue surfing on Discord {"position":"800,900","size":"100,100"}
+You see that your friends have been talking about some Reddit page while you were asleep.
 
 [[Click on the link they posted]]
-
-[[Look more into the conversation]]
-
-[[Alt + TAB and check Canvas]]
 
 [[Trying calling one of your friends]]
 
 
-:: Ignore them and go straight to cooking {"position":"1450,500","size":"100,100"}
+:: Cooking Time! {"position":"1900,500","size":"100,100"}
+As an amateur chef, you kind of know your way around the kitchen. You microwave the hashbrowns and start cooking the bacon on a pan. You get to the sausage and whip out a knife to start chopping them in thinner slices.
+
+However, your knife skills aren't that great, and you accidentally cut one of your fingers! It doesn't bleed that much, but you feel dumb about yourself.
+
+[[Ask Reddit how to use a knife->Open Reddit]]
+
+[[Continue cooking]]
+
+
+:: Discord {"position":"700,700","size":"100,100"}
+Opening Discord, you check in on your friend group's server. As you're sitting on the toilet, you relize you just took the fattest shit of your life. Now, you're pondering if you should scar your friends.
+
+[[Send a picture of your shit to the server->Send Poop]]
+
+[[Continue surfing on Discord]]
+
+
+:: Go back to sleep {"position":"1600,300","size":"100,100"}
+You start entering a deep slumber to which you never woke up again.
+
+# THE END
+
+[[Play Again->Adrian's Ball]] 
+
+
+:: Go morning routine {"position":"900,500","size":"100,100"}
+You brush your teeth, wash your face, and sit down on the toilet and start browsing your phone.
+
+Which app do you want to open?
+
+[[Discord]]
+
+[[Reddit->Click on the link they posted]]
+
+[[Canvas]]
+
+
+:: Go to Tryout {"position":"1300,1100","size":"100,100"}
 
 
 
-:: Join them {"position":"1350,500","size":"100,100"}
-
-
-
-:: Look more into the conversation {"position":"1800,500","size":"100,100"}
-
-
-
-:: Make some breakfast {"position":"1300,300","size":"100,100"}
-You walk into the living room and proceed immediately to the kitchen. 
-
-You take out the bacon, eggs, sausage, and hashbrowns from the refrigerator and put them on the countertop. You notice your roommate sitting on the couch and watching TV.
-
-What do you do?
-
-[[Greet them]]
-
-[[Offer to make them breakfast]]
-
-[[Join them]]
-
-[[Ignore them and go straight to cooking]]
-
-
-:: Offer to make them breakfast {"position":"1250,500","size":"100,100"}
-
-
-
-:: Reddit {"position":"700,500","size":"100,100"}
-
-
-
-:: Stocks App {"position":"800,500","size":"100,100"}
-
-
-
-:: The Morning {"position":"1300,150","size":"100,100"}
-# Insert Title Here...
+:: Hardcore {"position":"1500,100","size":"100,100"}
+<img src = "https://i.imgur.com/GUES67r.png" width = "80%">
 
 You wake up in the morning feeling refreshed and ready to get the day started.
 
-Do you:
+[[Get up from bed->Motel Shootout]]
+
+
+:: Hop on your computer {"position":"1300,500","size":"100,100"}
+You hop on your computer, open up Discord, and see that your friends have been talking about some reddit page while you were asleep.
+
+[[Click on the link they posted]]
+
+[[Alt + TAB and check Canvas->Canvas]]
+
+[[Trying calling one of your friends]]
+
+
+:: Make some breakfast {"position":"1700,500","size":"100,100"}
+You walk into the living room and proceed immediately to the kitchen. 
+
+You take out the bacon, eggs, sausage, and hashbrowns from the refrigerator and put them on the countertop. 
+
+[[Cooking Time!]]
+
+
+:: Motel Shootout {"position":"1700,100","size":"100,100"}
+<img src = "https://i.imgur.com/TRtZPjA.png" width = "80%">
+
+Arise! You get up from bed to get the day started.
+
+However, a (text-style:"smear","blink")[motel shootout] occured nearby between two rival drug cartels. You end up getting caught by a stray bullet.
+
+Unfortunately, you succumb to your bullet wounds and (text-colour:red)[die].
+
+# THE END.
+
+[[Play Again->Adrian's Ball]] 
+
+
+:: Open Reddit {"position":"2100,500","size":"100,100"}
+Startled by how horrendous your knife skills are, you whip out your phone and hop on Reddit to ask for help. However, your eyes quickly get distracted by one of the top posts.
+
+(text-colour:lime)[''r/collegebasketball
+"Attention all local high school hoopers! The College of Ben Dover is hosting open tryouts for the basketball team tonight at Rammell Park! Come join us for an opportunity to showcase your talent #GOATLIFE 💕🦋🛸🐐😍🥇🕺🏾"'']
+
+[[Say less, I'm going!->Go to Tryout]]
+
+[[Maybe I'll just continue cooking.->Continue cooking]]
+
+
+:: Send Poop {"position":"600,900","size":"100,100"}
+Out of pure intrusiveness, you take a picture of your brown masterpiece and send it to the server.
+
+The entire server immediate reacts with fear and horror.
+(text-style:"rumble")[''"??????"
+"WHAT THE FUCK ADRIAN???"
+"bro why did u send that"'']
+
+You laugh hysterically while still on the toilet. However, another notification pops up immediately after:
+(text-colour:grey)[You have been banned from the server.]
+Devastated, you clean and wipe your butt with regret.
+
+[[Make some breakfast]] 
+
+
+:: The Morning {"position":"1300,300","size":"100,100"}
+<img src = "https://i.imgur.com/GUES67r.png" width = "80%">
+
+You wake up in the morning feeling refreshed and ready to get the day started.
 
 [[Go morning routine]]
 
@@ -122,6 +177,9 @@ Do you:
 [[Go back to sleep]]
 
 
+:: Trying calling one of your friends {"position":"1400,900","size":"100,100"}
+//Beep. beep.//
 
-:: Trying calling one of your friends {"position":"2000,500","size":"100,100"}
+Your friend doesn't pick up your call. Might as well check out the Reddit post.
 
+[[Click on the link they posted]]
