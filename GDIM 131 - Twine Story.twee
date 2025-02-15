@@ -12,6 +12,21 @@ GDIM 131 - Twine Story
 }
 
 
+:: "Sir, I don't know what I was doing {"position":"600,1400","size":"100,100"}
+"Sir, I don't know what I was doing back there. I'm sorry."
+
+(text-colour:blue)["You could've killed someone with the way you're driving!"]
+
+"I know."
+
+(text-colour:blue)["As a matter of fact, step outside the car for me."]
+
+//What???//
+
+[[Okay...->Sobriety Test]]
+[[Panic and run->Make a run for it]] 
+
+
 :: Adrian's Ball {"position":"1300,100","size":"100,100"}
 # Adrian's (text-colour:orange)[Ball]
 ### A life of (text-style:"blur")[ill-advised] decisions from a boy who was trying to live his dreams of being a pro basketball player.
@@ -23,10 +38,25 @@ Choose your difficulty:
 _redblur[ [[Hardcore]] ]
 
 
+:: Be a good citizen and wait {"position":"1400,1500","size":"100,100"}
+Wow, what a smart and rational choice. You wait a bit and the light turns (text-colour:green)[green].
+
+[[Continue driving to the Tryout]] 
+
+
 :: Canvas {"position":"1050,900","size":"100,100"}
 You log onto Canvas to see you are failing all your classes. You get too depressed.
 
 [[Cry and make some breakfast->Make some breakfast]]
+
+
+:: Car crash {"position":"600,1700","size":"100,100"}
+(text-style:"blurrier","blink")[Boom.]
+You slam into a civilian car. You just murdered two innocent people due to your poor choices. The cops immediately yank you out the door and you get thrown into the back of the police car.
+
+//What have I done...//
+
+[[2 months later...->Court]]
 
 
 :: Click on the link they posted {"position":"1200,900","size":"100,100"}
@@ -44,7 +74,30 @@ Viola! Your food masterpiece is complete. You munch and munch and munch until th
 Now, you feel extremely bloated. Food coma is starting to hit you...
 
 [[Take a quick nap in bed->Go back to sleep]] 
-[[Stay awake by going to your computer->Hop on your computer]] 
+[[Stay awake by going to your computer->Hop on your computer]]
+
+
+:: Continue driving {"position":"1300,1300","size":"100,100"}
+You begin approaching at an intersection, but the light turned (text-colour:yellow)[yellow]. You're not too sure if you can make it past the yellow in time. However, you might risk being late to the tryout if you don't book it!
+
+[[Surely there isn't any cop nearby...->Run red light]]
+[[Be a good citizen and wait]]
+
+
+:: Continue driving to the Tryout {"position":"1400,1700","size":"100,100"}
+You blast some good o' Coco-Melon to get your mind focused on basketball while driving. This music fills you up with hype and confidence.
+
+You arrive at the supposed tryout spot, Rammell Park, but see no one. You take out your phone to look at the post again to make sure.
+
+(text-colour:lime)[''r/collegebasketball
+"Attention all local high school hoopers! The College of Ben Dover is hosting open tryouts for the basketball team tonight at Rammell Park! Come join us for an opportunity to showcase your talent #GOATLIFE 💕🦋🛸🐐😍🥇🕺🏾"'']
+
+(text-style:"blink")[//Blinks.//]
+
+//This has to be the right spot...//
+
+[[Step outside to see if you can find anyone.]]
+[[Wait in your car for anyone else to come first.]]
 
 
 :: Continue surfing on Discord {"position":"800,900","size":"100,100"}
@@ -65,12 +118,56 @@ However, your knife skills aren't that great, and you accidentally cut one of yo
 [[Continue cooking]]
 
 
+:: Court {"position":"400,1700","size":"100,100"}
+You sit in court in your orange jumper suit, with your hands and legs shackled.
+
+(text-style:"smear")["Guilty. 2 counts of endangerment and reckless driving. 2 counts of third-degree murder. 1 count of evading police."]
+
+//No...//
+
+(text-style:"smear")["I hereby sentence you to ''life in prison'' with no possibility of parole."]
+
+Just like that, chasing your dreams led to this.
+
+# THE END.
+
+[[Play Again->Adrian's Ball]]
+
+
 :: Discord {"position":"700,700","size":"100,100"}
-Opening Discord, you check in on your friend group's server. As you're sitting on the toilet, you relize you just took the fattest shit of your life. Now, you're pondering if you should scar your friends.
+Opening Discord, you check in on your friend group's server. As you're sitting on the toilet, you realize you just took the fattest shit of your life. Now, you're pondering if you should scar your friends.
 
 [[Send a picture of your shit to the server->Send Poop]]
 
 [[Continue surfing on Discord]]
+
+
+:: Drive back home {"position":"1100,1900","size":"100,100"}
+After minutes of waiting, you give up and just drive back home, thinking that the Reddit post is just some dumb scam post.
+
+You make it back home to your cozy place and make yourself some dinner before surfing the web again.
+
+Your life of chasing your dreams fell back to reality to the same o' way it has been.
+
+Damn.
+
+# THE END.
+
+[[Play Again->Adrian's Ball]]
+
+
+:: Drive through the spikes {"position":"800,1700","size":"100,100"}
+You couldn't react in time and drive straight through the spikes. You look at your dashboard and see that one of the tires got punctured. However, your car is still able to drive off quite well.
+
+You continue speeding down the freeway and see some more cops up ahead. Remembering your basketball skills, you evade some of the blockade by doing evasive maneuvers around them.
+
+''10 minutes have passed.''
+
+They're still up your rear. You exit the freeway and onto local streets. You approach an intersection with a red light, but adrenaline overtook you.
+
+"Fuck it, I'm driving through."
+
+[[...->Car crash]]
 
 
 :: Go back to sleep {"position":"1600,300","size":"100,100"}
@@ -78,7 +175,7 @@ You start entering a deep slumber to which you never woke up again.
 
 # THE END
 
-[[Play Again->Adrian's Ball]] 
+[[Play Again->Adrian's Ball]]
 
 
 :: Go morning routine {"position":"900,500","size":"100,100"}
@@ -94,7 +191,11 @@ Which app do you want to open?
 
 
 :: Go to Tryout {"position":"1300,1100","size":"100,100"}
+## 7:13 PM
+You load up your car with your basketball, some gear, and a bottle of Gaterade. As you start driving down the road to the supposed tryout spot, you begin to feel anxious.
+(text-style:"italic","rumble")[I'm so nervous... I haven't shot a basketball in months...]
 
+[[Continue driving]]
 
 
 :: Hardcore {"position":"1500,100","size":"100,100"}
@@ -113,6 +214,31 @@ You hop on your computer, open up Discord, and see that your friends have been t
 [[Alt + TAB and check Canvas->Canvas]]
 
 [[Trying calling one of your friends]]
+
+
+:: Make a run for it {"position":"1200,1700","size":"100,100"}
+What are you doing???
+
+You decided to make a run for it from the police out of pure panic. You start speeding up dramatically and drive erratically, not knowing where you are trying to drive anymore.
+
+(text-style:"buoy")[Your only goal is to drive away].
+
+As the pursuit continues, more police cars join in on the chase. You enter the freeway, only to realize that up ahead, some cops have set up a spike-strip to pop your tires.
+
+[[Drive through the spikes]]
+[[Make a sharp turn to avoid the spikes]]
+
+
+:: Make a sharp turn to avoid the spikes {"position":"1000,1700","size":"100,100"}
+You turn sharply to avoid the spikes. Congrats! You successfully avoided any of the spikes from hitting your tires.
+
+However, to do that, you ended up vearing off into the cement wall. Your car slams with tremendous force, and you die instantly on impact without realizing it.
+
+Just like that, your dreams of playing basketball was stopped by a wall.
+
+# THE END.
+
+[[Play Again->Adrian's Ball]]
 
 
 :: Make some breakfast {"position":"1700,500","size":"100,100"}
@@ -134,7 +260,7 @@ Unfortunately, you succumb to your bullet wounds and (text-colour:red)[die].
 
 # THE END.
 
-[[Play Again->Adrian's Ball]] 
+[[Play Again->Adrian's Ball]]
 
 
 :: Open Reddit {"position":"2100,500","size":"100,100"}
@@ -146,6 +272,24 @@ Startled by how horrendous your knife skills are, you whip out your phone and ho
 [[Say less, I'm going!->Go to Tryout]]
 
 [[Maybe I'll just continue cooking.->Continue cooking]]
+
+
+:: Pull over {"position":"1000,1400","size":"100,100"}
+You pull over immedaitely to the curb, defeated that you are about to get a ticket from the police. The cop approaches your window and you give him your license and registration. He asks why you were speeding so fast through an intersection like that.
+
+[["I'm late to a basketball tryout, it's my only dream and opportunity to make it!"->Tryout Excuse]]
+[["Sir, I don't know what I was doing]]
+
+
+:: Run red light {"position":"1200,1500","size":"100,100"}
+## (text-style:"smear")[(text-colour:red)[Red]]
+
+You speed through the intersection as the light turns red. You hear a siren go off in the distance.
+
+The flashing lights of red and blue beam behind you. You've been caught speeding through a red light.
+
+[[Pull over]]
+[[Make a run for it]]
 
 
 :: Send Poop {"position":"600,900","size":"100,100"}
@@ -160,7 +304,35 @@ You laugh hysterically while still on the toilet. However, another notification 
 (text-colour:grey)[You have been banned from the server.]
 Devastated, you clean and wipe your butt with regret.
 
-[[Make some breakfast]] 
+[[Make some breakfast]]
+
+
+:: Sobriety Test {"position":"400,1400","size":"100,100"}
+You walk out the door and stand next the police officer. He gives you commands in regards of doing a sobriety test. The cop begins off with a simple eye tracking test and you pass with flying colors. Then he tells you to walk in a straight line. As you start walking, you and the cop hear a comotion occuring at a motel nearby.
+
+Little did you or the cop know that what was occuring nearby is a motel shootout between two rival drug cartels. You end up getting caught by a stray bullet.
+
+Unfortunately, you succumb to your bullet wounds and (text-colour:red)[die].
+
+# THE END.
+
+[[Play Again->Adrian's Ball]]
+
+
+:: Step outside to see if you can find anyone. {"position":"1500,1900","size":"100,100"}
+You step outside your car and approach the basketball courts at the park. You look around hoping to see anyone at all.
+
+Emptiness.
+
+Thoughts and confusing start racing through your mind.
+//Am I at the right park?
+Is this Reddit post a prank?
+Where is everybody?//
+
+As you start walking back to your car, you see a white van pull up. Unbeknownst, you thought it was probably the coache's van.
+
+[[Walk up to say hi to the coach]]
+[[Wait a distance at the park]]
 
 
 :: The Morning {"position":"1300,300","size":"100,100"}
@@ -183,3 +355,62 @@ You wake up in the morning feeling refreshed and ready to get the day started.
 Your friend doesn't pick up your call. Might as well check out the Reddit post.
 
 [[Click on the link they posted]]
+
+
+:: Tryout Excuse {"position":"800,1400","size":"100,100"}
+"Sorry sir, I've just been trying to get to this basketball tryout for a college basketball team, and I'm late to it. I'm just a high school kid trying to chase his dreams."
+
+(text-colour:blue)["Ok."]
+
+Your attempt at pity failed miserably and he hands you the ticket.
+
+[[Continue driving to the Tryout]]
+
+
+:: Wait a distance at the park {"position":"1600,2100","size":"100,100"}
+Being cautious, you wait the park, but you just couldn't help but stare at the van and the people coming out. They wave at you in a friendly manner, but you still feel a bit intimidated and stay put.
+
+Little did you know that they were distracting you from another van that approached behind you. You get sacked and something pokes you on your left arm.
+
+You black out.
+
+[[Wake up]]
+
+
+:: Wait in your car for anyone else to come first. {"position":"1300,1900","size":"100,100"}
+You decide to wait in your car a bit. Your feelings of anxiousness changed to boredom after waiting for over 10 minutes.
+
+//Where the fuck is everyone?//
+
+[[Step outside to see if you can find anyone.]] 
+[[Drive back home]]
+
+
+:: Wake up {"position":"1500,2300","size":"100,100"}
+You wake up in a mysterous yellow cubicle.
+
+//Where the fuck am I?//
+//..There is no way I am in the Backrooms...//
+
+You look around, only to realize this really is the Backrooms.
+
+//How the fuck is this place even real. What am I going to do here...//
+
+# Adrian's (text-colour:orange)[Ball], Part II Coming Soon.
+
+[[Play Again->Adrian's Ball]]
+
+
+:: Walk up to say hi to the coach {"position":"1400,2100","size":"100,100"}
+"Hi, Coach!"
+
+You exclaim excitedly. You see a bald figure walk out the car, having the build of your typical sports coach. He comes up to you and greet you.
+
+You two start exchanging a short conversation about basketball.
+
+"I think LeBron James is the GOAT. Far better than Michael Jor-"
+
+Before you could finish your sentence, you felt a sharp stab in your left arm. You black out.
+
+[[Wake up]]
+
