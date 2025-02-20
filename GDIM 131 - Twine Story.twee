@@ -176,6 +176,8 @@ They're still up your rear. You exit the freeway and onto local streets. You app
 
 
 :: End Passage {"position":"1500,2600","size":"100,100"}
+(set: $averageTimePerPassage to $totalTime / $totalPassages)
+
 <script src="jquery-3.3.1.min.js">
 </script>
 
@@ -184,7 +186,8 @@ They're still up your rear. You exit the freeway and onto local streets. You app
 var sendData = JSON.stringify({
 "gamemode": harlowe.State.variables['gamemode'], 
 "totalPassages": harlowe.State.variables['totalPassages'], 
-"totalTime": harlowe.State.variables['totalTime']
+"totalTime": harlowe.State.variables['totalTime'],
+"averageTimePerPassage": harlowe.State.variables['averageTimePerPassage']
 });
  
 $.ajax({
