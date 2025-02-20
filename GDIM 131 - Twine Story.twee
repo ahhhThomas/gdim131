@@ -24,27 +24,32 @@ GDIM 131 - Twine Story
 //What???//
 
 [[Okay...->Sobriety Test]]
-[[Panic and run->Make a run for it]] 
+[[Panic and run->Make a run for it]]
 
 
 :: Adrian's Ball {"position":"1300,100","size":"100,100"}
+(set: $totalTime to 0)
+(set: $totalPassages to 0)
+
 # Adrian's (text-colour:orange)[Ball]
 ### A life of (text-style:"blur")[ill-advised] decisions from a boy who was trying to live his dreams of being a pro basketball player.
 
-(set: _redblur to (text-style: "shudder") + (transition-time: 50s) + (text-colour: red))
+(set: $totalPassages to 0)
+(set: $gamemode to "N/A")
 
 Choose your difficulty:
-[[Normal->The Morning]]
-_redblur[ [[Hardcore]] ]
+(link:"Normal")[(set: $gamemode to "Normal")(go-to:"The Morning")]
+(link:"Hardcore")[(set: $gamemode to "Hardcore")(go-to:"The Morning")]
+(link:"Ultra Hardcore")[(set: $gamemode to "Ultra Hardcore")(go-to:"Hardcore")]
 
 
 :: Be a good citizen and wait {"position":"1400,1500","size":"100,100"}
 Wow, what a smart and rational choice. You wait a bit and the light turns (text-colour:green)[green].
 
-[[Continue driving to the Tryout]] 
+[[Continue driving to the Tryout]]
 
 
-:: Canvas {"position":"1050,900","size":"100,100"}
+:: Canvas {"position":"1000,900","size":"100,100"}
 You log onto Canvas to see you are failing all your classes. You get too depressed.
 
 [[Cry and make some breakfast->Make some breakfast]]
@@ -131,7 +136,7 @@ Just like that, chasing your dreams led to this.
 
 # THE END.
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Discord {"position":"700,700","size":"100,100"}
@@ -153,7 +158,7 @@ Damn.
 
 # THE END.
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Drive through the spikes {"position":"800,1700","size":"100,100"}
@@ -170,12 +175,37 @@ They're still up your rear. You exit the freeway and onto local streets. You app
 [[...->Car crash]]
 
 
+:: End Passage {"position":"1500,2600","size":"100,100"}
+<script src="jquery-3.3.1.min.js">
+</script>
+
+<script>
+
+var sendData = JSON.stringify({
+"gamemode": harlowe.State.variables['gamemode'], 
+"totalPassages": harlowe.State.variables['totalPassages'], 
+"totalTime": harlowe.State.variables['totalTime']
+});
+ 
+$.ajax({
+url:"https://script.google.com/macros/s/AKfycbwyDvQl9LH8KNTEuwMiDCJP355Zwo4wN1Nk4daOJ5kAP0aAObYhU2jLkrw5jn4i_SmebQ/exec",
+method:"POST",
+dataType: "json",
+data: sendData
+}).done(function() {});
+</script>
+
+# The End.
+
+[[Play Again->Adrian's Ball]] 
+
+
 :: Go back to sleep {"position":"1600,300","size":"100,100"}
 You start entering a deep slumber to which you never woke up again.
 
 # THE END
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Go morning routine {"position":"900,500","size":"100,100"}
@@ -238,7 +268,7 @@ Just like that, your dreams of playing basketball was stopped by a wall.
 
 # THE END.
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Make some breakfast {"position":"1700,500","size":"100,100"}
@@ -260,7 +290,7 @@ Unfortunately, you succumb to your bullet wounds and (text-colour:red)[die].
 
 # THE END.
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Open Reddit {"position":"2100,500","size":"100,100"}
@@ -272,6 +302,11 @@ Startled by how horrendous your knife skills are, you whip out your phone and ho
 [[Say less, I'm going!->Go to Tryout]]
 
 [[Maybe I'll just continue cooking.->Continue cooking]]
+
+
+:: Persistent Passage [header] {"position":"1000,100","size":"100,100"}
+(live: 1s)[(set: $totalTime to it + 1)]
+(set: $totalPassages to it + 1)
 
 
 :: Pull over {"position":"1000,1400","size":"100,100"}
@@ -316,7 +351,7 @@ Unfortunately, you succumb to your bullet wounds and (text-colour:red)[die].
 
 # THE END.
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Step outside to see if you can find anyone. {"position":"1500,1900","size":"100,100"}
@@ -339,6 +374,8 @@ As you start walking back to your car, you see a white van pull up. Unbeknownst,
 <img src = "https://i.imgur.com/GUES67r.png" width = "80%">
 
 You wake up in the morning feeling refreshed and ready to get the day started.
+
+Your difficulty: $gamemode
 
 [[Go morning routine]]
 
@@ -398,7 +435,7 @@ You look around, only to realize this really is the Backrooms.
 
 # Adrian's (text-colour:orange)[Ball], Part II Coming Soon.
 
-[[Play Again->Adrian's Ball]]
+[[Continue->End Passage]]
 
 
 :: Walk up to say hi to the coach {"position":"1400,2100","size":"100,100"}
@@ -414,3 +451,13 @@ Before you could finish your sentence, you felt a sharp stab in your left arm. Y
 
 [[Wake up]]
 
+
+:: StoryScript [script]
+if (!window.harlowe){
+	window.harlowe = {"State": State};
+}
+
+:: StoryStylesheet [stylesheet]
+.redblur {
+  color: blue;
+}
